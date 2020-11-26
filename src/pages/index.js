@@ -13,8 +13,8 @@ export default ({ data }) => (
     <SEO title="Home" />
     <StyledHero home="true" img={data.hero.childImageSharp.fluid}>
       <Banner
-        title="North Pakistan Handicrafts & Gems Stones"
-        info=" Discover hiden gems of pakistan."
+        title="North Pakistan Handicrafts & Gemstones"
+        info=" Discover hidden gems and handicrafts of pakistan."
       >
         {/* <AniLink fade to="/tours" className="btn-white">
           explore tours

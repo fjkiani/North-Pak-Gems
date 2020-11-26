@@ -3,13 +3,13 @@ require("dotenv").config({
 })
 module.exports = {
   siteMetadata: {
-    title: "BackRoads",
+    title: "North Pakistan Handicrafts and Gemstones",
     description:
-      "Explore awesome worldwide tours & discover what makes each of them unique. Forget your daily routine & say yes to adventure",
-    author: "@johndoe",
-    twitterUsername: "@john_smilga",
-    image: "/defaultBcg.jpeg",
-    siteUrl: "https://gatsby-backroad-project.netlify.com",
+      "Discover quality handicrafts and gemstones of Northern Pakistan",
+    author: "@fjkiani",
+    twitterUsername: "@fjkiani",
+    image: "/3.jpg",
+    siteUrl: "https://northpakgems.netlify.app",
   },
   plugins: [
     `gatsby-plugin-react-helmet`,
