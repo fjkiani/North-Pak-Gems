@@ -26,6 +26,7 @@ body {
   background: var(--mainWhite);
   line-height: 1.4;
   font-size: 1rem;
+  text-transform: capitalize;
 }
 h1,
 h2,
@@ -62,21 +63,23 @@ p {
   text-transform: uppercase;
   text-decoration: none;
   letter-spacing: var(--mainSpacing);
-  color: var(--mainWhite);
+  color: black;
   border: 2px solid var(--mainWhite);
   padding: 0.9rem 1.6rem;
   display: inline-block;
   transition: var(--mainTransition);
   cursor: pointer;
+  
 }
 .btn-white:hover {
   background: var(--mainWhite);
   color: var(--primaryColor);
 }
 .btn-primary {
-  background: var(--primaryColor);
+  background: green;
   color: var(--mainWhite);
   border: 2px solid var(--primaryColor);
+  width: 100%;
 }
 .btn-primary:hover {
   background: transparent;
