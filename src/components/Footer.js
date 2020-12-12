@@ -37,6 +37,7 @@ const Footer = () => {
           Gilgit, Pakistan</p>
           <br/>
         <p>+92-331-980-7200</p>    
+        <p><a href="mailto:official.gbpak@gmail.com">Official.GBPak@gmail.com</a></p>
       </div>
       <div className={styles.copyright}>
         copyright &copy; GB Pakistan Tour & Travel {new Date().getFullYear()} all

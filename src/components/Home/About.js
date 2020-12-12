@@ -1,10 +1,12 @@
-import React from "react"
+import React, {useEffect} from 'react'
 import { useStaticQuery, graphql, Link } from "gatsby"
 import Title from "../Title"
 import styles from "../../css/about.module.css"
 // import img from "../../images/serena.jpg"
 // import img from "../../images/serena.jpg"
 import Img from "gatsby-image"
+import AOS from 'aos'
+import 'aos/dist/aos.css'
 
 
 const getAbout = graphql`
@@ -86,9 +88,13 @@ const About = ({dat}) => {
   const data = useStaticQuery(getAbout)
   // const { aboutImage } = useStaticQuery(getAbout)
 
+  useEffect(() => {
+    AOS.init({
+    duration : 2000})
+}, [])
 
   return (
-    <section className={styles.about}>
+    <section className={styles.about} data-aos="fade-in">
       <Title title="Made in Gilgit-Baltistan" />
       <div className={styles.aboutCenter}>
         <article className={styles.aboutImg}>
@@ -97,10 +103,10 @@ const About = ({dat}) => {
           </div>
         </article>
         
-        <article className={styles.aboutInfo}>
+        <article className={styles.aboutInfo}data-aos="fade-in">
       
         </article>
-        <div className={styles.imgContainer}>
+        <div className={styles.imgContainer}data-aos="fade-in">
             <Img
               fluid={data.fourImage.childImageSharp.fluid}
               alt="awesome landscape"
@@ -109,7 +115,7 @@ const About = ({dat}) => {
 
     
          
-        <article className={styles.aboutInfo}>
+        <article className={styles.aboutInfo}data-aos="fade-in">
           <h4>Quality Handicrafts</h4>
           <p>
           Known as "Land of the Mountains" and "Land of Beauty", Gilgit Baltistan is known for some of the most precious arts and crafts the world has to offer 
@@ -119,14 +125,14 @@ const About = ({dat}) => {
 
         </article>
 
-        <div className={styles.imgContainer2}>
+        <div className={styles.imgContainer2}data-aos="fade-in">
             <Img
               fluid={data.gem1.childImageSharp.fluid}
               alt="awesome landscape"
             />
           </div>
 
-        <article className={styles.aboutInfo}>
+        <article className={styles.aboutInfo}data-aos="fade-in">
           <h4>Locally Sourced</h4>
           <p>
             all of our items are sourced from local dealers and manufactures. By purchasing any of our items, you are helping the people of gilgit.
@@ -135,7 +141,7 @@ const About = ({dat}) => {
         </article>
         <hr/><br/>
 
-          <div className={styles.imgContainer2}>
+          <div className={styles.imgContainer2}data-aos="fade-in">
             <Img
               fluid={data.handicraft1.childImageSharp.fluid}
               alt="awesome landscape"
@@ -149,7 +155,7 @@ const About = ({dat}) => {
               alt="awesome landscape"
             />
           </div> */}
-        <article className={styles.aboutInfo}>
+        <article className={styles.aboutInfo}data-aos="fade-in">
           <h4>Authentic</h4>
           <p>
            Our items will give you an authentic feel of culture. This feel is meant to make you feel connected with the people and land of Gilgit no matter where you are in the world.
@@ -158,13 +164,13 @@ const About = ({dat}) => {
         </article>
         <hr/><br/>
  
-          <div className={styles.imgContainer}>
+          <div className={styles.imgContainer}data-aos="fade-in">
             <Img
               fluid={data.ruby.childImageSharp.fluid}
               alt="awesome landscape"
             />
           </div>
-          <article className={styles.aboutInfo}>
+          <article className={styles.aboutInfo}data-aos="fade-in">
           <h4>Precious </h4>
           <p>
           A remarkable variety of gemstones occur in Pakistan. The most important are emerald from the Swat Valley and ruby and spinel from the Hunza Valley.
@@ -172,7 +178,7 @@ const About = ({dat}) => {
          
         </article>
         <hr/><br/>
-        <div className={styles.imgContainer}>
+        <div className={styles.imgContainer}data-aos="fade-in">
             <Img
               fluid={data.gift1.childImageSharp.fluid}
               alt="awesome landscape"
@@ -192,7 +198,7 @@ const About = ({dat}) => {
     <br/><br/>    <hr/><br/><br/>
 
 
-      <article className={styles.aboutInfo}>
+      <article className={styles.aboutInfo}data-aos="fade-in">
           <h4>100% satisfaction guranteed</h4>
           <p>
             We stand by our quality. 
