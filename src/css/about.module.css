@@ -15,6 +15,17 @@
 .about-img {
   position: relative;
 }
+/* .aboutInfo > p {
+  font-size: 15px;
+} */
+
+ p{
+  font-size: 15px;
+}
+
+.h4 {
+  font-size: 20px;
+}
 
 .about-img img {
   width: 100%;
