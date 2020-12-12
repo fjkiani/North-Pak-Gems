@@ -2,7 +2,7 @@ import React from "react"
 import { graphql, useStaticQuery } from "gatsby"
 import styled from "styled-components"
 import img from "../images/connectBcg.jpeg"
-import img from "../images/aLake.jpeg"
+// GIT 
 import Img from "gatsby-image"
 
 const getImages = graphql`
