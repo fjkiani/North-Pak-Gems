@@ -7,7 +7,7 @@ const Contact = () => {
       <Title title="contact" subtitle="us" />
       <div className={styles.center}>
         <form
-          action="https://formspree.io/youremail@email.com"
+          action="https://formspree.io/f/xayllzwg"
           method="POST"
           className={styles.form}
         >
